@@ -4,7 +4,7 @@
 t= int(input())
 for i in range(t):
     a= int(input())
-    setA = set(map(int,input().strip().split``()))
+    setA = set(map(int,input().strip().split()))
     b = int(input())
     setB = set(map(int,input().strip().split()))
     if setA.issubset(setB):
