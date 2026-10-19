@@ -18,11 +18,17 @@ import sys
 
 def marsExploration(s):
     # Write your code here
-    h={"S","O"}
+    b=[]
+    for i in range(0,len(s),3):
+        b.append(s[i:i+3])
     k=0
-    for i in s:
-        if i not in h:
-            k=k+1
+    for i in b:
+        if i[0]!="S":
+            k+=1
+        if i[1]!="O":
+            k+=1
+        if i[2]!="S":
+            k+=1
     return k
 
 if __name__ == '__main__':
